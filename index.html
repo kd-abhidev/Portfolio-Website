@@ -2,20 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhidev K D — DevOps & Cloud Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABHIDEV_KD</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <div class="content">
  
   <nav>
-    <div class="nav-logo">ABHIDEV KD</div>
+    <a href="#home" class="nav-logo">ABHIDEV KD</a>
     <div class="nav-links">
-      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -28,13 +25,12 @@
       <div class="status-pill"><span class="status-dot"></span>Open to opportunities · Bangalore</div>
       <h1>Hi, I'm </h1>
       <h1><span>ABHIDEV K D</span></h1>
-      <div class="hero-role">DevOps Engineer · Cloud Engineer</div>
+      <h2><span id="typing"></span></h2>
       <div class="hero-btns">
         <button class="btn-primary" id="viewProjectsBtn">View projects</button>
         <a class="btn-secondary" href="mailto:kdabhidev@gmail.com">Contact me</a>
       </div>
     </div>
-    <!-- Replace photo.jpg with your actual photo filename -->
     <img class="hero-photo" src="photo.png" alt="Abhidev K D" />
   </div>
  
@@ -113,28 +109,39 @@
   <div class="section" id="projects">
     <div class="section-label">Projects</div>
     <div class="projects-grid">
-      <div class="project-card">
-        <h3>CI/CD Web App Deployment</h3>
+      <a class="project-card" href="https://github.com/kd-abhidev/App-deployment.git" target="_blank" rel="noopener">
+        <div class="project-card-header">
+          <h3>CI/CD Web App Deployment</h3>
+          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
         <p>End-to-end Jenkins pipeline for a Java web app — automated build, code quality, containerization, and deployment to EC2.</p>
         <div class="project-tags">
           <span class="project-tag">Jenkins</span><span class="project-tag">Docker</span>
           <span class="project-tag">Maven</span><span class="project-tag">AWS EC2</span>
         </div>
-      </div>
-      <div class="project-card">
-        <h3>EC2 Monitoring &amp; Alert System</h3>
+      </a>
+       
+      <a class="project-card" href="https://github.com/kd-abhidev/EC2-Monitoring-Alert-System.git" target="_blank" rel="noopener">
+        <div class="project-card-header">
+          <h3>EC2 Monitoring &amp; Alert System</h3>
+          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
         <p>CloudWatch monitoring for EC2 metrics with SNS-powered email alerts triggered on CPU and network thresholds.</p>
         <div class="project-tags">
           <span class="project-tag">CloudWatch</span><span class="project-tag">SNS</span><span class="project-tag">EC2</span>
         </div>
-      </div>
-      <div class="project-card">
-        <h3>Serverless File Processing</h3>
+      </a>
+       
+      <a class="project-card" href="https://github.com/kd-abhidev/Serverless-file-processing.git" target="_blank" rel="noopener">
+        <div class="project-card-header">
+          <h3>Serverless File Processing</h3>
+          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
         <p>S3-triggered Lambda pipeline for automated file processing with CloudWatch logging for monitoring and debugging.</p>
         <div class="project-tags">
           <span class="project-tag">Lambda</span><span class="project-tag">S3</span><span class="project-tag">CloudWatch</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
  
@@ -156,7 +163,7 @@
         <svg viewBox="0 0 24 24" fill="#3B82F6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
       </a>
  
-      <a class="social-icon" href="https://github.com/abhidev-kd" target="_blank" title="GitHub">
+      <a class="social-icon" href="https://github.com/kd-abhidev" target="_blank" title="GitHub">
         <svg viewBox="0 0 24 24" fill="#3B82F6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
       </a>
  
@@ -196,9 +203,10 @@
     </a>
   </div>
  
-  <footer>Copyright ©2026 All rights reserved by ABHIDEV K D</footer>
- 
-</div>
-<script src="script.js"></script>
+ </div>  <!-- CLOSE .content -->
+
+<footer id="footer"></footer>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script> 
 </body>
 </html>
