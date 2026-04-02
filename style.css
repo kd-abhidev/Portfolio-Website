@@ -5,13 +5,15 @@ body {
   background: #0d0d0f;
   color: #e8e8e8;
   font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
 .content {
-  max-width: 860px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 0 4rem;
+  padding: 0 16px 4rem;
 }
 
 /* ===== NAV ===== */
@@ -36,14 +38,17 @@ nav {
 .hero {
   padding: 3.5rem 2rem 2.5rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 2rem;
 }
 .hero-text { flex: 1; }
 
 .hero-photo {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 200px;
   border-radius: 50%;
   border: 2px solid #1d4ed8;
   flex-shrink: 0;
@@ -80,8 +85,7 @@ nav {
 .hero h1 span { color: #3B82F6; }
 .hero-role { font-size: 14px; color: #60a5fa; margin-bottom: 1rem; letter-spacing: 0.04em; font-weight: 500; }
 .hero p { font-size: 15px; color: #666; line-height: 1.7; max-width: 460px; margin-bottom: 1.75rem; }
-
-.hero-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.hero-btns { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
 
 .btn-primary {
   background: #3B82F6;
@@ -254,12 +258,30 @@ footer {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
-  .hero { flex-direction: column-reverse; align-items: center; text-align: center; }
-  .hero-photo { margin-top: 0; margin-bottom: 1rem; }
-  .hero p { max-width: 100%; }
-  .hero-btns { justify-content: center; }
-  .projects-grid { grid-template-columns: 1fr; }
-  .social-row { justify-content: center; }
+  .hero {
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  }
+  .hero-text { width: 100%;}
+  .hero h1 { font-size: 28px;}
+  .hero-role { font-size: 13px;}
+  .hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .hero-btns button,
+  .hero-btns a {text-align: center;}
+  .nav { padding: 1rem;}
+   nav { flex-direction: column; gap: 10px;}
+  .nav-links { flex-wrap: wrap; justify-content: center;}
+  .projects-grid { grid-template-columns: 1fr;}
+  .skill-group { flex-direction: column;}
+  .skill-group-label { min-width: auto;}
 }
 
 /* ===== CLICKABLE PROJECT CARDS ===== */
@@ -268,6 +290,7 @@ a.project-card {
   display: block;
   cursor: pointer;
   position: relative;
+  
 }
 
 .project-card-header {
