@@ -1,212 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABHIDEV_KD</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>Abhidev K D — DevOps & Cloud Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="content">
- 
-  <nav>
-    <a href="#home" class="nav-logo">ABHIDEV KD</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
- 
-  <div class="hero" id="home">
-    <div class="hero-text">
-      <div class="status-pill"><span class="status-dot"></span>Open to opportunities · Bangalore</div>
-      <h1>Hi, I'm </h1>
-      <h1><span>ABHIDEV K D</span></h1>
-      <h2><span id="typing"></span></h2>
-      <div class="hero-btns">
-        <button class="btn-primary" id="viewProjectsBtn">View projects</button>
-        <a class="btn-secondary" href="mailto:kdabhidev@gmail.com">Contact me</a>
-      </div>
-    </div>
-    <img class="hero-photo" src="photo.png" alt="Abhidev K D" />
-  </div>
- 
-  <div class="section" id="about">
-    <div class="section-label">About</div>
-    <div class="about-card">
-      <p>Computer Science graduate from APJ Abdul Kalam Technological University with hands on experience building CI/CD pipelines, automating cloud deployments, and managing containerized infrastructure on AWS. Currently interning at QSpiders, I’m passionate about building reliable, automated systems that make deployments smoother and infrastructure easier to maintain.</p>
-      <p class="about-subtitle">Currently deepening my skills in:</p>
-      <div class="learning-row">
-        <span class="learning-tag"><span class="learning-tag-dot"></span>DevOps tooling</span>
-        <span class="learning-tag"><span class="learning-tag-dot"></span>AWS Cloud</span>
-        <span class="learning-tag"><span class="learning-tag-dot"></span>Kubernetes &amp; container orchestration</span>
-        <span class="learning-tag"><span class="learning-tag-dot"></span>Infrastructure as Code</span>
-      </div>
-    </div>
-  </div>
- 
-  <div class="section">
-    <div class="section-label">Skills</div>
-    <div class="skills-groups">
-      <div class="skill-group">
-        <span class="skill-group-label">Cloud</span>
-        <div class="skills-row">
-          <span class="skill-tag">AWS EC2</span><span class="skill-tag">S3</span><span class="skill-tag">VPC</span>
-          <span class="skill-tag">IAM</span><span class="skill-tag">CloudWatch</span><span class="skill-tag">Lambda</span><span class="skill-tag">SNS</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <span class="skill-group-label">CI/CD</span>
-        <div class="skills-row">
-          <span class="skill-tag">Jenkins</span><span class="skill-tag">Maven</span><span class="skill-tag">SonarQube</span>
-          <span class="skill-tag">Nexus</span><span class="skill-tag">GitHub Webhooks</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <span class="skill-group-label">Containers</span>
-        <div class="skills-row">
-          <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span><span class="skill-tag">Apache Tomcat</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <span class="skill-group-label">Infra &amp; OS</span>
-        <div class="skills-row">
-          <span class="skill-tag">Terraform</span><span class="skill-tag">Ansible</span>
-          <span class="skill-tag">Linux</span><span class="skill-tag">Shell Scripting</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <span class="skill-group-label">Dev &amp; DB</span>
-        <div class="skills-row">
-          <span class="skill-tag">Python</span><span class="skill-tag">Git</span>
-          <span class="skill-tag">MySQL</span><span class="skill-tag">Oracle SQL</span>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="section" id="experience">
-    <div class="section-label">Experience</div>
-    <div class="exp-card">
-      <div class="exp-header">
-        <div>
-          <div class="exp-title">DevOps Intern</div>
-          <div class="exp-company">QSpiders</div>
-        </div>
-        <div class="exp-date">Aug 2025 – Present</div>
-      </div>
-      <ul class="exp-bullets">
-        <li>Built and managed CI/CD pipelines using Jenkins integrated with GitHub, Maven, SonarQube, and Nexus.</li>
-        <li>Deployed web apps on Apache Tomcat hosted on AWS EC2 Linux instances.</li>
-        <li>Provisioned and managed AWS resources — EC2, S3, IAM, and VPC.</li>
-      </ul>
-    </div>
-  </div>
- 
-  <div class="section" id="projects">
-    <div class="section-label">Projects</div>
-    <div class="projects-grid">
-      <a class="project-card" href="https://github.com/kd-abhidev/App-deployment.git" target="_blank" rel="noopener">
-        <div class="project-card-header">
-          <h3>CI/CD Web App Deployment</h3>
-          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </div>
-        <p>End-to-end Jenkins pipeline for a Java web app — automated build, code quality, containerization, and deployment to EC2.</p>
-        <div class="project-tags">
-          <span class="project-tag">Jenkins</span><span class="project-tag">Docker</span>
-          <span class="project-tag">Maven</span><span class="project-tag">AWS EC2</span>
-        </div>
-      </a>
-       
-      <a class="project-card" href="https://github.com/kd-abhidev/EC2-Monitoring-Alert-System.git" target="_blank" rel="noopener">
-        <div class="project-card-header">
-          <h3>EC2 Monitoring &amp; Alert System</h3>
-          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </div>
-        <p>CloudWatch monitoring for EC2 metrics with SNS-powered email alerts triggered on CPU and network thresholds.</p>
-        <div class="project-tags">
-          <span class="project-tag">CloudWatch</span><span class="project-tag">SNS</span><span class="project-tag">EC2</span>
-        </div>
-      </a>
-       
-      <a class="project-card" href="https://github.com/kd-abhidev/Serverless-file-processing.git" target="_blank" rel="noopener">
-        <div class="project-card-header">
-          <h3>Serverless File Processing</h3>
-          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </div>
-        <p>S3-triggered Lambda pipeline for automated file processing with CloudWatch logging for monitoring and debugging.</p>
-        <div class="project-tags">
-          <span class="project-tag">Lambda</span><span class="project-tag">S3</span><span class="project-tag">CloudWatch</span>
-        </div>
-      </a>
-    </div>
-  </div>
- 
-  <div class="section">
-    <div class="section-label">Certifications</div>
-    <div class="certs-row">
-      <div class="cert-item"><span class="cert-dot"></span>Advanced Python Programming — Manifold Institute</div>
-      <div class="cert-item"><span class="cert-dot"></span>Data Structures and Algorithms — Infosys Springboard</div>
-      <div class="cert-item"><span class="cert-dot"></span>Soft Skills "mPOWER" — Vertical Eye</div>
-    </div>
-  </div>
- 
-  <!-- GET IN TOUCH — ICON STYLE -->
-  <div class="section" id="contact">
-    <div class="section-label">Get in touch</div>
-    <div class="social-row">
-    
-      <a class="social-icon" href="https://linkedin.com/in/abhidev-kd" target="_blank" title="LinkedIn">
-        <svg viewBox="0 0 24 24" fill="#3B82F6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
- 
-      <a class="social-icon" href="https://github.com/kd-abhidev" target="_blank" title="GitHub">
-        <svg viewBox="0 0 24 24" fill="#3B82F6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-      </a>
- 
-      <a class="social-icon" href="https://instagram.com/abhidev_kd" target="_blank" title="Instagram">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-        </svg>
-      </a>
- 
-      <a class="social-icon" href="mailto:kdabhidev@gmail.com" title="Email">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-          <polyline points="22,6 12,13 2,6"/>
-        </svg>
-      </a>
- 
-      <a class="social-icon" href="tel:+917559823534" title="Phone">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-      </a>
-    </div>
-  </div>
- 
-  <!-- CV DOWNLOAD -->
-  <div class="cv-section">
-    <!-- Replace ABHIDEV_KD.pdf with your actual CV filename -->
-    <a id="downloadCV" class="btn-download-cv" href="ABHIDEV_KD.pdf" download="Abhidev_KD_CV.pdf">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-        <polyline points="7 10 12 15 17 10"/>
-        <line x1="12" y1="15" x2="12" y2="3"/>
-      </svg>
-      Download Resume
-    </a>
-  </div>
- 
- </div>  <!-- CLOSE .content -->
 
-<footer id="footer"></footer>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="script.js"></script> 
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">AKD<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about"      onclick="closeNav()">About</a></li>
+    <li><a href="#skills"     onclick="closeNav()">Skills</a></li>
+    <li><a href="#experience" onclick="closeNav()">Experience</a></li>
+    <li><a href="#projects"   onclick="closeNav()">Projects</a></li>
+    <li><a href="#education"  onclick="closeNav()">Education</a></li>
+    <li><a href="#contact"    onclick="closeNav()">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile nav backdrop -->
+<div class="nav-backdrop" id="navBackdrop" onclick="closeNav()"></div>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-orb"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Bangalore, India</div>
+    <h1 class="hero-name">
+      Abhidev<span class="accent-line">K D</span>
+    </h1>
+    <p class="hero-role">DevOps Engineer &amp; Cloud Engineer</p>
+    <p class="hero-desc">Building robust CI/CD pipelines, automating cloud infrastructure, and architecting containerized applications on AWS. CS graduate turning code into reliable, scalable deployments.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        View Projects
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Automating the<br>path forward</h2>
+        <p>Computer Science graduate with hands-on experience across the DevOps and cloud engineering stack. I specialize in transforming complex deployment workflows into streamlined, automated pipelines.</p>
+        <p>From provisioning AWS infrastructure with Terraform to orchestrating containers with Kubernetes, I bridge the gap between development and production — building systems that are resilient, observable, and fast to ship.</p>
+        <p>Currently working as a DevOps Intern at QSpiders, Bangalore, where I've reduced deployment times dramatically through intelligent pipeline design and automation.</p>
+      </div>
+      <div class="reveal delay-1">
+        <div class="about-stats">
+          <div class="stat-cell">
+            <span class="stat-num">5<span class="stat-unit">min</span></span>
+            <span class="stat-label">Deploy Time</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Live Projects</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal section-header-center">
+      <div class="section-label center">Technical Skills</div>
+      <h2 class="section-title">The tools I work with</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Cloud Platform
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS EC2</span><span class="skill-tag">S3</span>
+          <span class="skill-tag">VPC</span><span class="skill-tag">IAM</span>
+          <span class="skill-tag">CloudWatch</span><span class="skill-tag">Lambda</span>
+          <span class="skill-tag">SNS</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          CI/CD & Build
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Jenkins</span><span class="skill-tag">Jenkins Pipeline</span>
+          <span class="skill-tag">Maven</span><span class="skill-tag">Nexus</span>
+          <span class="skill-tag">SonarQube</span><span class="skill-tag">GitHub Webhooks</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          Containers & Orchestration
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Apache Tomcat</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          IaC & Configuration
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Terraform</span><span class="skill-tag">Ansible</span>
+          <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          Operating Systems
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux</span><span class="skill-tag">User Management</span>
+          <span class="skill-tag">File Permissions</span><span class="skill-tag">Networking</span>
+          <span class="skill-tag">Process Management</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          Databases & Programming
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span><span class="skill-tag">Oracle SQL</span>
+          <span class="skill-tag">Python</span><span class="skill-tag">Shell Scripting</span>
+          <span class="skill-tag">C</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Work Experience</div>
+      <h2 class="section-title">Where I've worked</h2>
+    </div>
+    <div class="timeline reveal delay-1">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="exp-meta">
+          <span class="exp-company">QSpiders</span>
+          <span class="exp-period">Aug 2025 — Present</span>
+        </div>
+        <div class="exp-role">DevOps Intern</div>
+        <ul class="exp-points">
+          <li>Built a Jenkins CI/CD pipeline that reduced deployment time to 5 minutes, integrating GitHub, Maven, SonarQube, and Nexus for automated build, artifact management, and deployment workflows.</li>
+          <li>Deployed web applications on Apache Tomcat hosted on AWS EC2 Linux instances and monitored pipeline execution through Jenkins dashboards.</li>
+          <li>Provisioned and managed AWS resources including EC2, S3, IAM, and VPC. Executed application deployment and server setup on Linux-based EC2 instances.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal section-header-center">
+      <div class="section-label center">Projects</div>
+      <h2 class="section-title">Things I've built</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-num">01 / Project</div>
+        <div class="project-title">CI/CD Based Web Application Deployment</div>
+        <p class="project-desc">Designed and implemented a full CI/CD pipeline for a Java web application. Configured GitHub webhooks for automated builds on every commit, automated build/packaging with Maven, code quality with SonarQube, and artifact management via Nexus. Containerized with Docker and deployed on EC2 with Apache Tomcat.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Jenkins</span><span class="stack-tag">GitHub</span>
+          <span class="stack-tag">Maven</span><span class="stack-tag">SonarQube</span>
+          <span class="stack-tag">Nexus</span><span class="stack-tag">Docker</span>
+          <span class="stack-tag">AWS EC2</span><span class="stack-tag">Tomcat</span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-num">02 / Project</div>
+        <div class="project-title">EC2 Monitoring & Alert System</div>
+        <p class="project-desc">Deployed an AWS monitoring solution using CloudWatch to track EC2 performance metrics like CPU usage and network traffic. Developed threshold-based alarms to detect elevated resource consumption and implemented Amazon SNS to automate email notifications. Created test loads to verify alarm performance.</p>
+        <div class="project-stack">
+          <span class="stack-tag">AWS CloudWatch</span><span class="stack-tag">EC2</span>
+          <span class="stack-tag">Amazon SNS</span><span class="stack-tag">Linux</span>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-num">03 / Project</div>
+        <div class="project-title">Serverless File Processing System</div>
+        <p class="project-desc">Built a serverless file processing pipeline using Amazon S3 and AWS Lambda. Configured S3 event triggers to automatically invoke Lambda functions on new file uploads, developed processing logic inside Lambda, and enabled CloudWatch Logs for monitoring execution and troubleshooting failures.</p>
+        <div class="project-stack">
+          <span class="stack-tag">AWS Lambda</span><span class="stack-tag">Amazon S3</span>
+          <span class="stack-tag">CloudWatch</span><span class="stack-tag">Serverless</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ EDUCATION ═══════════════════════════ -->
+<section id="education">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Education & Certifications</div>
+      <h2 class="section-title">Academic background</h2>
+    </div>
+    <div class="edu-grid reveal delay-1">
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree">B.Tech in Computer Science & Engineering</div>
+        <div class="edu-institution">APJ Abdul Kalam Technological University</div>
+        <div class="edu-period">2021 – 2025</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">📚</div>
+        <div class="edu-degree">Class XII — State Board</div>
+        <div class="edu-institution">Higher Secondary Education</div>
+        <div class="edu-period">2018 – 2020</div>
+      </div>
+    </div>
+    <div class="reveal delay-2" style="margin-top: 3rem;">
+      <div class="section-label">Certifications</div>
+      <div class="certs-list">
+        <span class="cert-badge">Advanced Python Programming — Manifold Institute</span>
+        <span class="cert-badge">Data Structures & Algorithms — Infosys Springboard</span>
+        <span class="cert-badge">Soft Skills "mPOWER" — Vertical Eye</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner reveal">
+      <div class="section-label center">Contact</div>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="contact-sub">Open to DevOps and Cloud Engineering roles. If you're building something interesting or need someone who cares about automation, reliability, and clean infrastructure — let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:kdabhidev@gmail.com" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          kdabhidev@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/abhidev-kd" target="_blank" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="tel:+917559823534" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 75598 23534
+        </a>
+        <a href="https://github.com/" target="_blank" class="contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 Abhidev K D. All rights reserved.</span>
+  <span>Built with precision · Bangalore, India</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
