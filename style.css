@@ -48,7 +48,7 @@ nav {
   z-index: 1000;                        /* high enough to always be on top */
   padding: 1.25rem 3rem;
   display: flex; align-items: center; justify-content: space-between;
-  background: rgba(10,10,10,0.92);
+  background: var(--bg-nav, rgba(10,10,10,0.92));
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   transition: padding 0.3s ease;
@@ -85,6 +85,40 @@ nav {
   cursor: pointer; position: relative; z-index: 1001;
   background: none; border: none; padding: 4px;
 }
+/* Nav right wrapper */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 1002;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--surface);
+  border: 1px solid var(--border-2);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--text-2);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Show sun icon in dark, moon icon in light */
+[data-theme="dark"] .icon-moon  { display: none; }
+[data-theme="dark"] .icon-sun   { display: block; }
+[data-theme="light"] .icon-sun  { display: none; }
+[data-theme="light"] .icon-moon { display: block; }
 .hamburger span {
   display: block; width: 22px; height: 1.5px;
   background: var(--text);
@@ -102,15 +136,16 @@ nav {
   nav { padding: 1rem 1.5rem; }
 
   .hamburger { display: flex; }
+  .nav-right  { display: flex; align-items: center; gap: 0.75rem; }
 
   .nav-links {
     /* Off-screen to the right by default */
     position: fixed;
     top: 0; right: 0; bottom: 0;
     width: min(75vw, 300px);
-    background: #141414;
+    background: var(--surface);
     border-left: 1px solid var(--border-2);
-    z-index: 1000;                      /* same level as nav bar */
+    z-index: 1100;                      /* same level as nav bar */
 
     flex-direction: column;
     align-items: flex-start;
@@ -174,7 +209,7 @@ nav {
 ───────────────────────────────────────── */
 section {
   padding-top: 7rem;
-  scroll-margin-top: 120px;
+  scroll-margin-top: 80px;
 }
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 3rem; }
@@ -219,8 +254,8 @@ section {
   padding: 0; position: relative; overflow: hidden;
 }
 #about {
-  scroll-margin-top: 120px;
-  padding-top: 9rem;
+  scroll-margin-top: 80px;
+  padding-top: 7rem;
 }
 .hero-grid {
   position: absolute; inset: 0;
@@ -560,7 +595,57 @@ footer {
   51%  { transform: scaleY(1); transform-origin: bottom; opacity: 1; }
   100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
 }
+/* Hero two-column layout */
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 4rem;
+}
+.hero-text { min-width: 0; }
+.hero-photo-wrap {
+  flex-shrink: 0;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.5s forwards;
+}
+.hero-photo-frame {
+  position: relative;
+  width: 260px;
+  height: 320px;
+}
+.hero-photo {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 16px 16px 50px 16px;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.photo-accent-ring {
+  position: absolute;
+  top: -10px; right: -10px;
+  width: 100%; height: 100%;
+  border-radius: 16px 16px 50px 16px;
+  border: 2px solid var(--accent);
+  opacity: 0.35;
+  z-index: 1;
+}
+.photo-dot-grid {
+  position: absolute;
+  bottom: -16px; left: -16px;
+  width: 72px; height: 72px;
+  background-image: radial-gradient(circle, var(--accent) 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+  opacity: 0.4;
+  z-index: 0;
+}
 
+/* Hide photo on smaller screens */
+@media (max-width: 900px) {
+  .hero-layout { grid-template-columns: 1fr; }
+  .hero-photo-wrap { display: none; }
+}
 /* ─────────────────────────────────────────
    RESPONSIVE — TABLET
 ───────────────────────────────────────── */
@@ -575,7 +660,7 @@ footer {
 @media (max-width: 768px) {
   .container  { padding: 0 1.5rem; }
   .hero-content { padding: 0 1.5rem; }
-  section { padding: 5rem 0; scroll-margin-top: 90px; }
+  section { padding: 5rem 0; scroll-margin-top: 70px; }
 
   .hero-name { font-size: clamp(3rem, 12vw, 4rem); }
 
@@ -592,3 +677,19 @@ footer {
   .contact-link { justify-content: center; }
 }
 
+[data-theme="light"] {
+  --bg:          #f5f5f0;
+  --bg-2:        #eeede8;
+  --bg-3:        #e8e7e2;
+  --surface:     #ffffff;
+  --surface-2:   #f9f8f4;
+  --border:      rgba(0,0,0,0.08);
+  --border-2:    rgba(0,0,0,0.15);
+  --accent:      #5a7a00;
+  --accent-dim:  rgba(90,122,0,0.10);
+  --accent-dim2: rgba(90,122,0,0.05);
+  --text:        #1a1a1a;
+  --text-2:      #555555;
+  --text-3:      #aaaaaa;
+  --bg-nav:      rgba(245,245,240,0.93);
+}
