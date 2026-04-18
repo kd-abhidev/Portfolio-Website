@@ -673,7 +673,7 @@ footer {
 
 @media (max-width: 480px) {
   .about-stats { grid-template-columns: 1fr 1fr; }
-  .contact-links { flex-direction: column; align-items: stretch; }
+  .contact-links { flex-direction: row; align-items: center; }
   .contact-link { justify-content: center; }
 }
 
@@ -685,7 +685,7 @@ footer {
   --surface-2:   #f9f8f4;
   --border:      rgba(0,0,0,0.08);
   --border-2:    rgba(0,0,0,0.15);
-  --accent:      #5a7a00;
+  --accent:      #2f24ffe9;
   --accent-dim:  rgba(90,122,0,0.10);
   --accent-dim2: rgba(90,122,0,0.05);
   --text:        #1a1a1a;
