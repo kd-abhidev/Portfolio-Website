@@ -4,17 +4,23 @@ const hamburger = document.getElementById('hamburger');
 const backdrop  = document.getElementById('navBackdrop');
 
 function openNav() {
+  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
   navLinks.classList.add('open');
   hamburger.classList.add('open');
   backdrop.classList.add('visible');
+
   document.body.style.overflow = 'hidden';
+  document.body.style.paddingRight = scrollBarWidth + 'px';
 }
 
 function closeNav() {
   navLinks.classList.remove('open');
   hamburger.classList.remove('open');
   backdrop.classList.remove('visible');
+
   document.body.style.overflow = '';
+  document.body.style.paddingRight = '';
 }
 
 function toggleNav() {
