@@ -694,20 +694,20 @@ footer {
 }
 
 [data-theme="light"] {
-  --bg:          #f5f5f0;
-  --bg-2:        #eeede8;
-  --bg-3:        #e8e7e2;
+  --bg:          #f5f7f5;
+  --bg-2:        #ecefec;
+  --bg-3:        #e2e7e2;
   --surface:     #ffffff;
-  --surface-2:   #f9f8f4;
-  --border:      rgba(0,0,0,0.08);
-  --border-2:    rgba(0,0,0,0.15);
-  --accent:      #2f24ffe9;
-  --accent-dim:  rgba(90,122,0,0.10);
-  --accent-dim2: rgba(90,122,0,0.05);
-  --text:        #1a1a1a;
-  --text-2:      #555555;
-  --text-3:      #aaaaaa;
-  --bg-nav:      rgba(245,245,240,0.93);
+  --surface-2:   #f8faf8;
+  --border:      rgba(0,0,0,0.07);
+  --border-2:    rgba(0,0,0,0.14);
+  --accent:      #2d7a3a;
+  --accent-dim:  rgba(45,122,58,0.10);
+  --accent-dim2: rgba(45,122,58,0.05);
+  --text:        #141a14;
+  --text-2:      #4a5a4a;
+  --text-3:      #9aaa9a;
+  --bg-nav:      rgba(245,247,245,0.93);
   --mobile-nav-bg: #ffffff;
 }
 
