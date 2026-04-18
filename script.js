@@ -1,9 +1,7 @@
-/* ─────────────────────────────────────────
-   MOBILE NAV — toggle open / close
-───────────────────────────────────────── */
-const navLinks   = document.getElementById('navLinks');
-const hamburger  = document.getElementById('hamburger');
-const backdrop   = document.getElementById('navBackdrop');
+/* ── MOBILE NAV ── */
+const navLinks  = document.getElementById('navLinks');
+const hamburger = document.getElementById('hamburger');
+const backdrop  = document.getElementById('navBackdrop');
 
 function openNav() {
   navLinks.classList.add('open');
@@ -16,20 +14,13 @@ function closeNav() {
   navLinks.classList.remove('open');
   hamburger.classList.remove('open');
   backdrop.classList.remove('visible');
-  document.body.style.overflow = 'auto';
+  document.body.style.overflow = '';
 }
 
 function toggleNav() {
-  if (navLinks.classList.contains('open')) {
-    closeNav();
-  } else {
-    openNav();
-  }
+  navLinks.classList.contains('open') ? closeNav() : openNav();
 }
 
-/* ─────────────────────────────────────────
-   EVENT LISTENERS
-───────────────────────────────────────── */
 hamburger.addEventListener('click', toggleNav);
 backdrop.addEventListener('click', closeNav);
 
@@ -41,23 +32,26 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeNav();
 });
 
-/* ─────────────────────────────────────────
-   FIX: reset menu on resize
-───────────────────────────────────────── */
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 768) {
-    closeNav();
-  }
+  if (window.innerWidth > 768) closeNav();
 });
 
-/* ─────────────────────────────────────────
-   FIX: ensure clean state on load
-───────────────────────────────────────── */
 window.addEventListener('load', closeNav);
 
-/* ─────────────────────────────────────────
-   SCROLL REVEAL
-───────────────────────────────────────── */
+/* ── THEME TOGGLE ── */
+const themeToggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+
+const savedTheme = localStorage.getItem('theme') || 'dark';
+html.setAttribute('data-theme', savedTheme);
+
+themeToggle.addEventListener('click', () => {
+  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+
+/* ── SCROLL REVEAL ── */
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -72,45 +66,28 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
-/* ─────────────────────────────────────────
-   STAGGERED GRID CHILDREN
-───────────────────────────────────────── */
-const staggerSelectors = [
-  '.skills-grid   .skill-category',
-  '.projects-grid .project-card',
-  '.edu-grid      .edu-card',
-];
-
-staggerSelectors.forEach((selector) => {
-  document.querySelectorAll(selector).forEach((el, i) => {
-    el.style.transitionDelay = (i * 0.08) + 's';
+/* ── STAGGERED GRID ── */
+['.skills-grid .skill-category', '.projects-grid .project-card', '.edu-grid .edu-card']
+  .forEach(sel => {
+    document.querySelectorAll(sel).forEach((el, i) => {
+      el.style.transitionDelay = (i * 0.08) + 's';
+    });
   });
-});
 
-/* ─────────────────────────────────────────
-   ACTIVE NAV LINK HIGHLIGHT
-───────────────────────────────────────── */
+/* ── ACTIVE NAV HIGHLIGHT ── */
 const sections = document.querySelectorAll('section[id]');
 
 const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        document.querySelectorAll('.nav-links a').forEach((a) => {
-          a.style.color = '';
-        });
-
-        const active = document.querySelector(
-          `.nav-links a[href="#${entry.target.id}"]`
-        );
-
-        if (active) active.style.color = 'var(--accent)';
+        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
       }
     });
   },
-  { threshold: 0.4 }
+  { threshold: 0.35, rootMargin: '-60px 0px 0px 0px' }
 );
 
-sections.forEach((s) => sectionObserver.observe(s));
-
-
+sections.forEach(s => sectionObserver.observe(s));
