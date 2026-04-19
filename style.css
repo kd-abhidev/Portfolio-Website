@@ -18,6 +18,7 @@
   --font-display: 'Syne', sans-serif;
   --font-body:    'DM Sans', sans-serif;
   --font-mono:    'DM Mono', monospace;
+  --mobile-nav-bg: #1e1e1e;
 }
 
 /* ─────────────────────────────────────────
@@ -143,7 +144,7 @@ nav {
     position: fixed;
     top: 0; right: 0; bottom: 0;
     width: min(75vw, 300px);
-    background: #181818;
+    background: var(--mobile-nav-bg, #1e1e1e);
     border-left: 1px solid rgba(255,255,255,0.15);
     box-shadow: -8px 0 40px rgba(0,0,0,0.8);
     z-index: 1100;                      /* same level as nav bar */
@@ -152,7 +153,7 @@ nav {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0;
-    padding: 5.5rem 2.5rem 3rem;
+    padding: 0.5rem 2.5rem 3rem;
 
     transform: translateX(100%);        /* hidden off-screen */
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
