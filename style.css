@@ -894,3 +894,50 @@ footer {
   color: #ffffff;
   box-shadow: 0 8px 30px rgba(90,122,0,0.2);
 }
+
+/* ── Project card GitHub link ── */
+.project-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.project-card-header .project-num {
+  marom: 0;
+}
+
+.project-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.project-top-row .project-num {
+  margin-bottom: 0;
+}
+
+.project-gh-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-3);
+  text-decoration: none;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.project-gh-link:hover {
+  color: var(--accent);
+}
+
+.project-gh-link svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.project-gh-link:hover svg {
+  transform: rotate(-8deg) scale(1.1);
+}
