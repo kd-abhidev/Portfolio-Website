@@ -941,3 +941,48 @@ footer {
   transform: rotate(-8deg) scale(1.1);
 }
 
+/* ── Show/Hide 5th project ── */
+.project-hidden {
+  display: none;
+}
+
+.project-hidden.visible-project {
+  display: flex;
+}
+
+.projects-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.btn-more-projects {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: transparent;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  border: 1px solid var(--border-2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-more-projects:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim2);
+}
+
+.btn-more-projects svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-more-projects.open svg {
+  transform: rotate(180deg);
+}
