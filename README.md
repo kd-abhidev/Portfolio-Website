@@ -79,18 +79,6 @@ cd Portfolio-Website
 
 ---
 
-### Run Locally
-
-Open index.html in browser
-
-or
-
-```id="n5d4sk"
-python -m http.server
-```
-
----
-
 ## Customization
 
 * Update index.html with your details
@@ -123,9 +111,3 @@ python -m http.server
 ## Future Improvements
 
 * Deploy using CI CD pipeline
-
----
-
-
-
-
