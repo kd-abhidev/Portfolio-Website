@@ -98,3 +98,20 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach(s => sectionObserver.observe(s));
 
+/* ── Toggle 5th project ── */
+function toggleProjects() {
+  const card   = document.getElementById('project-5');
+  const btn    = document.getElementById('toggleProjects');
+  const label  = document.getElementById('toggleLabel');
+  const isOpen = card.classList.contains('visible-project');
+
+  if (isOpen) {
+    card.classList.remove('visible-project');
+    label.textContent = 'View More Projects';
+    btn.classList.remove('open');
+  } else {
+    card.classList.add('visible-project');
+    label.textContent = 'Show Less';
+    btn.classList.add('open');
+  }
+}
