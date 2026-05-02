@@ -215,88 +215,113 @@
 </section>
 
 
-<!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+<!-- PROJECTS -->
 <section id="projects">
   <div class="container">
     <div class="reveal section-header-center">
-      <div class="section-label center">Projects</div><div class="section-label center"> </div>
+      <div class="section-label center">Projects</div>
       <h2 class="section-title">Things I've built</h2>
     </div>
     <div class="projects-grid">
+
       <div class="project-card reveal">
         <div class="project-top-row">
-        <div class="project-num">01 / Project</div>
-        <a href="https://github.com/kd-abhidev/App-Deployment-using-K8s-Docker-CI-CD-on-AWS.git" target="_blank" class="project-gh-link">
+          <div class="project-num">01 · CI/CD · Security · Containers</div>
+          <a href="https://github.com/kd-abhidev/App-Deployment-using-K8s-Docker-CI-CD-on-AWS.git" target="_blank" class="project-gh-link" aria-label="GitHub">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </a>
         </div>
-        <div class="project-title">DevOps Pipeline Deployment with Docker and Kubernetes</div>
-          <p class="project-desc">Built and deployed a React-based Zomato clone using a complete CI CD pipeline. Automated the flow from code push to production using Jenkins. Integrated SonarQube for code quality checks, OWASP Dependency Check for vulnerability detection, and Trivy for container image scanning. Containerized the application using Docker and deployed it on a Kubernetes cluster for scalable and reliable delivery.</p>
-            <div class="project-stack">
-              <span class="stack-tag">Git</span><span class="stack-tag">GitHub</span>
-              <span class="stack-tag">Jenkins</span><span class="stack-tag">Trivy</span>
-              <span class="stack-tag">SonarQube</span><span class="stack-tag">OWASP</span>
-              <span class="stack-tag">Docker</span><span class="stack-tag">Kubernetes</span>
-            </div>
-        </div>
-      <div class="project-card reveal">
-        <div class="project-top-row">
-        <div class="project-num">02 / Project</div>
-        <a href="https://github.com/kd-abhidev/App-Deployment-Jenkins-with-Maven-SonarQube-Nexus.git" target="_blank" class="project-gh-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </a>
-          </div>
-        <div class="project-title">CI/CD Based Web Application Deployment</div>
-        <p class="project-desc">Designed and implemented a full CI/CD pipeline for a Java web application. Configured GitHub webhooks for automated builds on every commit, automated build/packaging with Maven, code quality with SonarQube, and artifact management via Nexus. Containerized with Docker and deployed on EC2 with Apache Tomcat.</p>
+        <div class="project-title">DevOps Pipeline with Docker &amp; Kubernetes</div>
+        <!-- FIX: Problem → Built → Result structure across all projects -->
+        <ul class="project-points">
+          <li><span class="point-label">Problem</span> Deploying a React app manually was error-prone with no security scanning in the workflow.</li>
+          <li><span class="point-label">Built</span> Full Jenkins CI/CD pipeline with SonarQube for code quality, OWASP for dependency scanning, Trivy for image scanning, Docker for containerization, and Kubernetes for orchestration.</li>
+          <li><span class="point-label">Result</span> Every code push triggers a fully automated, security-scanned deployment with zero manual steps from commit to production.</li>
+        </ul>
         <div class="project-stack">
-          <span class="stack-tag">Jenkins</span><span class="stack-tag">GitHub</span>
-          <span class="stack-tag">Maven</span><span class="stack-tag">SonarQube</span>
-          <span class="stack-tag">Nexus</span><span class="stack-tag">Docker</span>
-          <span class="stack-tag">AWS EC2</span><span class="stack-tag">Tomcat</span>
+          <span class="stack-tag">Jenkins</span><span class="stack-tag">Docker</span>
+          <span class="stack-tag">Kubernetes</span><span class="stack-tag">SonarQube</span>
+          <span class="stack-tag">OWASP</span><span class="stack-tag">Trivy</span><span class="stack-tag">GitHub</span>
         </div>
       </div>
+
       <div class="project-card reveal">
         <div class="project-top-row">
-        <div class="project-num">03 / Project</div>
-        <a href="https://github.com/kd-abhidev/EC2-Monitoring-Alert-System.git" target="_blank" class="project-gh-link">
+          <div class="project-num">02 · CI/CD · Artifacts · Cloud</div>
+          <a href="https://github.com/kd-abhidev/App-Deployment-Jenkins-with-Maven-SonarQube-Nexus.git" target="_blank" class="project-gh-link" aria-label="GitHub">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </a>
-          </div>
-        <div class="project-title">EC2 Monitoring & Alert System</div>
-        <p class="project-desc">Deployed an AWS monitoring solution using CloudWatch to track EC2 performance metrics like CPU usage and network traffic. Developed threshold-based alarms to detect elevated resource consumption and implemented Amazon SNS to automate email notifications. Created test loads to verify alarm performance.</p>
+        </div>
+        <div class="project-title">CI/CD Web Application Deployment</div>
+        <ul class="project-points">
+          <li><span class="point-label">Problem</span> Java web app deployments were manual with no code quality gates or versioned artifact storage.</li>
+          <li><span class="point-label">Built</span> Automated pipeline using Jenkins triggered by GitHub webhooks on every commit, Maven for builds, SonarQube for quality checks, Nexus for artifact versioning, Docker for containerization, and Apache Tomcat on EC2 for hosting.</li>
+          <li><span class="point-label">Result</span> Deployment time dropped to 5 minutes with zero manual handoffs across build, test, and deploy stages.</li>
+        </ul>
+        <div class="project-stack">
+          <span class="stack-tag">Jenkins</span><span class="stack-tag">Maven</span>
+          <span class="stack-tag">SonarQube</span><span class="stack-tag">Nexus</span>
+          <span class="stack-tag">Docker</span><span class="stack-tag">AWS EC2</span><span class="stack-tag">Tomcat</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top-row">
+          <div class="project-num">03 · Monitoring · Alerting</div>
+          <a href="https://github.com/kd-abhidev/EC2-Monitoring-Alert-System.git" target="_blank" class="project-gh-link" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+        <div class="project-title">EC2 Monitoring &amp; Alert System</div>
+        <ul class="project-points">
+          <li><span class="point-label">Problem</span> EC2 resource spikes like CPU, network — went undetected until they caused visible failures.</li>
+          <li><span class="point-label">Built</span> AWS CloudWatch monitoring with threshold-based alarms connected to Amazon SNS for automated email alerts on CPU and network breaches.</li>
+          <li><span class="point-label">Result</span> Resource issues are flagged within minutes & verified using load tests that correctly triggered all alarms.</li>
+        </ul>
         <div class="project-stack">
           <span class="stack-tag">AWS CloudWatch</span><span class="stack-tag">EC2</span>
           <span class="stack-tag">Amazon SNS</span><span class="stack-tag">Linux</span>
         </div>
       </div>
+
       <div class="project-card reveal">
         <div class="project-top-row">
-        <div class="project-num">04 / Project</div>
-        <a href="https://github.com/kd-abhidev/Serverless-file-processing.git" target="_blank" class="project-gh-link">
+          <div class="project-num">04 · Serverless · Event-driven</div>
+          <a href="https://github.com/kd-abhidev/Serverless-file-processing.git" target="_blank" class="project-gh-link" aria-label="GitHub">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </a>
-          </div>
+        </div>
         <div class="project-title">Serverless File Processing System</div>
-        <p class="project-desc">Built a serverless file processing pipeline using Amazon S3 and AWS Lambda. Configured S3 event triggers to automatically invoke Lambda functions on new file uploads, developed processing logic inside Lambda, and enabled CloudWatch Logs for monitoring execution and troubleshooting failures.</p>
+        <ul class="project-points">
+          <li><span class="point-label">Problem</span> File processing required a constantly running server — wasteful and over-engineered for sporadic uploads.</li>
+          <li><span class="point-label">Built</span> Serverless pipeline using S3 event triggers to auto-invoke Lambda on new uploads, with CloudWatch Logs for execution monitoring and failure debugging.</li>
+          <li><span class="point-label">Result</span> Zero server management overhead — processing scales automatically and costs nothing when idle.</li>
+        </ul>
         <div class="project-stack">
           <span class="stack-tag">AWS Lambda</span><span class="stack-tag">Amazon S3</span>
           <span class="stack-tag">CloudWatch</span><span class="stack-tag">Serverless</span>
         </div>
       </div>
+
       <div class="project-card reveal project-hidden" id="project-5">
         <div class="project-top-row">
-        <div class="project-num">05 / Project</div>
-        <a href="https://github.com/kd-abhidev/Linux-system-monitoring-tool.git" target="_blank" class="project-gh-link">
+          <div class="project-num">05 · Linux · Automation</div>
+          <a href="https://github.com/kd-abhidev/Linux-system-monitoring-tool.git" target="_blank" class="project-gh-link" aria-label="GitHub">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </a>
-          </div>
+        </div>
         <div class="project-title">Linux System Monitoring Tool</div>
-        <p class="project-desc">Built a Bash based system monitoring tool for Linux servers that continuously tracks CPU usage, memory consumption, and disk utilization. Configured threshold based alerting to trigger warnings when resources exceed defined limits. Automated execution using Cron jobs for scheduled monitoring and implemented structured logging to maintain audit of resource usage over time.</p>
+        <ul class="project-points">
+          <li><span class="point-label">Problem</span> No visibility into CPU, memory, and disk usage on Linux servers issues were only caught after failures.</li>
+          <li><span class="point-label">Built</span> Bash monitoring tool tracking system resources, threshold-based alerting, cron-scheduled execution, and structured logging for audit history.</li>
+          <li><span class="point-label">Result</span> Proactive alerting replaced reactive firefighting — resource issues flagged before they become outages.</li>
+        </ul>
         <div class="project-stack">
           <span class="stack-tag">Linux</span><span class="stack-tag">Bash</span>
           <span class="stack-tag">Cronjob</span><span class="stack-tag">Logging</span>
         </div>
       </div>
+
     </div>
     <div class="projects-more-wrap reveal">
       <button class="btn-more-projects" id="toggleProjects" onclick="toggleProjects()">
@@ -304,7 +329,6 @@
         <svg id="toggleIcon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
     </div>
-
   </div>
 </section>
 
@@ -371,7 +395,6 @@
     <div class="resume-inner reveal">
       <div class="section-label center">Resume</div><div class="section-label center"> </div>
       <h2 class="section-title">Want the full profile?</h2>
-      <p class="resume-sub">Get an overview of my work, skills, and projects.</p>
       <a href="ABHIDEV_KD-CV.pdf" download class="btn-resume-dl">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume
